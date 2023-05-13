@@ -2,6 +2,8 @@
 
 This repo implements and compare two models, namely a Bidirectional LSTM and TENER (Transformer Encoder for Named Entity Recognition) on the [ai4bharat-IndicNER](https://huggingface.co/ai4bharat/IndicNER) dataset,
 
+Find live demo at https://amankshihab-tener-malayalam-app-st-app-jxbima.streamlit.app/
+
 ## Pretrained Models
 
 Please find the pretrained weights at: https://drive.google.com/drive/folders/13DQ7zTz8fiSTkwmScpd8ZuO5mVtC4y_C?usp=sharing
