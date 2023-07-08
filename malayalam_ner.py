@@ -97,5 +97,6 @@ class MalayalamNER:
         conf_scores = torch.max(softmaxed, dim=-1)
         conf_scores = list(map(lambda x: x.item(), conf_scores[0]))
         argmaxed = torch.argmax(op, dim=-1)[mask == 1]
-        tags = [ids_to_tags[i.item()] for i in argmaxed]
-        return list(zip(self.bpemb.encode_with_bos_eos(input_string), tags, conf_scores))
+        # tags = [ids_to_tags[i.item()] for i in argmaxed]
+        # return list(zip(self.bpemb.encode_with_bos_eos(input_string), tags, conf_scores))
+        return list(zip(self.bpemb.encode_with_bos_eos(input_string), argmaxed, conf_scores))
